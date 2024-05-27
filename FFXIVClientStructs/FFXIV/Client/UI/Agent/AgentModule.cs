@@ -193,6 +193,7 @@ public enum AgentId : uint {
     ArmouryNotebook = 156,
     MinionNotebook = 157,
     MountNotebook = 158,
+    [Obsolete($"Use {nameof(ItemComp)} instead.")] ItemCompare = 159,
     ItemComp = 159,
     DailyQuestSupply = 160,
     MobHunt = 161,

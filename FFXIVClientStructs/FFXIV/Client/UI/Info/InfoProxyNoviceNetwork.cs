@@ -9,3 +9,9 @@ public unsafe partial struct InfoProxyNoviceNetwork {
     [GenerateCStrOverloads]
     public partial bool InviteToNoviceNetwork(ulong contentId, ushort worldId, byte* name);
 }
+
+[Obsolete($"Use {nameof(InfoProxyNoviceNetwork)} instead")]
+[StructLayout(LayoutKind.Explicit, Size = 0x28)]
+public unsafe partial struct InfoProxy20 {
+    [FieldOffset(0x00)] public InfoProxyInterface InfoProxyInterface;
+}
